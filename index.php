@@ -1,6 +1,6 @@
 <?php
 
-include_once('header.php');
+include_once('inc/header.php');
 
 $STH = $DBH->query("SELECT COUNT(*) FROM `users` WHERE `fbid`='".$uid."'");
 
@@ -18,6 +18,6 @@ else
 	<i>You have '.$row->gold.' gold</i>';
 }
 
-include_once('footer.php');
+include_once('inc/footer.php');
 
 ?>

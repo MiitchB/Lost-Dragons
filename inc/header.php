@@ -2,14 +2,14 @@
 
 try
 {
-	$DBH = new PDO("mysql:host=instance31897.db.xeround.com;port=20547;dbname=app9261699", 'app9261699', 'cookies11');
+	$DBH = new PDO("mysql:host=localhost;dbname=cavy_dragon", 'cavy_dragon', '***');
 }
 catch(PDOException $e)
 {
 	echo $e->getMessage();
 }
 
-include_once "facebook.php";
+include_once "inc/facebook.php";
 
 $app_id = '262927160495864';
 $application_secret = 'db8910816b9f3f2f6f7cfc4f0d7fab55';
